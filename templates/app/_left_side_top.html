@@ -1,0 +1,14 @@
+    {% include "app/_left_section_logo.html" %}
+
+    <div class="sidebarSep mt0"></div>
+
+    {% include "app/_left_section_search_widget.html" %}
+
+    <div class="sidebarSep"></div>
+
+{% if showbalance %}
+    {% include "app/_general_balance_widget.html" %}
+
+    {% include "app/_next_update_progress_widget.html" %}
+{% endif %}
+

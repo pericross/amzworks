@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <title>Crown - premium responsive admin template for backend systems</title>
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
+    {% include "app/js.html" %}
+    <!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body>
+
+{% include "app/_left_side.html" with showbalance=True %}
+
+<!-- Right side -->
+<div id="rightSide">
+
+    {% include "app/_top_fixed_navigation.html" %}
+    {% include "app/_responsive_header.html" %}
+    {% include "app/_title_area.html" with page_title="Charts and Graphs" %}
+
+    <div class="line"></div>
+
+    {% include "app/_page_statistics_area.html" %}
+
+    <div class="line"></div>
+
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+
+        <!-- Note -->
+        <div class="nNote nInformation hideit">
+            <p><strong>INFORMATION: </strong>Statistics info above is clickable, with nice dropdowns and updating
+                status.</p>
+        </div>
+
+        <!-- Lines chart -->
+        <div class="widget chartWrapper">
+            <div class="title"><img src="/static/images/icons/dark/graph.png" alt="" class="titleIcon"/><h6>Lines
+                chart</h6></div>
+            <div class="body">
+                <div class="chart"></div>
+            </div>
+        </div>
+
+        <!-- Bars chart -->
+        <div class="widget chartWrapper">
+            <div class="title"><img src="/static/images/icons/dark/stats.png" alt="" class="titleIcon"/><h6>Vertical
+                bars</h6></div>
+            <div class="body"><div class="bars" id="placeholder1"></div></div>
+        </div>
+
+        <!-- Bars chart -->
+        <div class="widget chartWrapper">
+            <div class="title"><img src="/static/images/icons/dark/stats.png" alt="" class="titleIcon"/><h6>Horisontal
+                bars</h6></div>
+            <div class="body">
+                <div class="bars" id="placeholder1_h"></div>
+            </div>
+        </div>
+
+        <div class="widgets">
+
+            <!-- Donut -->
+            <div class="oneThree">
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/stats.png" alt="" class="titleIcon"/><h6>
+                        Donut chart</h6></div>
+                    <div class="body">
+                        <div class="pie" id="donut"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto updating chart -->
+            <div class="twoOne">
+                <div class="widget chartWrapper">
+                    <div class="title"><img src="/static/images/icons/dark/stats.png" alt="" class="titleIcon"/><h6>Auto
+                        updating chart</h6></div>
+                    <div class="body">
+                        <div class="updating"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer line -->
+    <div id="footer">
+        <div class="wrapper">As usually all rights reserved.More Templates <a href="http://www.cssmoban.com/"
+                                                                              target="_blank" title="模板之家">模板之家</a> -
+            Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Crown - premium responsive admin template for backend systems</title>
+{% include "app/js.html" %}
+
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body>
+
+<!-- Left side content -->
+<div id="leftSide">
+    {% include "app/_left_side_top.html" with showbalance=True %}
+
+    <div class="sidebarSep"></div>
+    
+    <!-- Left navigation -->
+        <ul id="menu" class="nav">
+        {% include "app/_left_section_dashboard.html" %}
+        {% include "app/_left_section_statistics_and_charts.html" %}
+        {% include "app/_left_section_forms.html" %}
+        {% include "app/_left_section_ui_elements.html" %}
+        {% include "app/_left_section_tables.html" %}
+        {% include "app/_left_section_widgets.html" %}
+        {% include "app/_left_section_errors.html" %}
+        {% include "app/_left_section_file_manager.html" %}
+        <li class="typo"><a href="#" title="" class="active exp" id="current"><span>Other pages</span><strong>3</strong></a>
+            <ul class="sub">
+                <li class="this"><a href={% url "typography" %} title="">Typography</a></li>
+                <li><a href={% url "calendar" %} title="">Calendar</a></li>
+                <li class="last"><a href={% url "gallery" %} title="">Gallery</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!-- Right side -->
+<div id="rightSide">
+
+    {% include "app/_top_fixed_navigation.html" %}
+    {% include "app/_responsive_header.html" %}
+    {% include "app/_title_area.html" with page_title="Typography"%}
+
+    <div class="line"></div>
+
+    {% include "app/_page_statistics_and_control_bottons_area.html" with class_name="controlB" size=32 %}
+
+    <div class="line"></div>
+    
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+    
+      <div class="widgets">
+            <div class="oneTwo">
+            
+                <!-- Headings -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/clipboard.png" alt="" class="titleIcon" /><h6>Headings</h6></div>
+                    <div class="body">
+                        <h1 class="pt10">H1 Tag Header</h1><p>Vivamus non <a href="#" title="">massa eu massa</a> ornare vulputate id ac velit. <strong>Pellentesque nunc nulla</strong>, faucibus at pretium eu, fringilla ut dui. </p>
+                        <h2 class="pt20">H2 Tag Header</h2><p>Mauris <span class="red">luctus nisi</span> sed erat pharetra nec hendrerit mi sagittis. <span class="blueBack">Pellentesque</span> nulla erat, varius nec sagittis a, pretium et est. </p>
+                        <h3 class="pt20">H2 Tag Header</h3><p>Pellentesque habitant <s>morbi tristique</s> senectus et netus et malesuada <span class="orange">fames ac turpis</span> egestas. Phasellus a lacus massa</p>
+                        <h4 class="pt20">H2 Tag Header</h4><p>Cras nec nunc sit amet mi <span class="redBack">dictum sagittis</span> id vitae est. Aliquam id dolor non metus aliquam faucibus nec pretium mi <span class="greyBack">vestibulum</span> </p>
+                        <h5 class="pt20">H2 Tag Header</h5><p>Praesent nec leo arcu. <span class="green">Nulla facilisi</span>. Aenean neque arcu, laoreet <i>in bibendum sed</i>, tincidunt <span class="greenBack">consectetur</span> dolor. </p>
+                        <h6 class="pt20">H2 Tag Header</h6><p>Integer dui felis, <em><strong>varius quis vulputate</strong></em> egestas, suscipit ac nisi. <u>Vestibulum sed odio</u> lectus, a dictum enim</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="oneTwo">
+            
+                <!-- Code view -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/link2.png" alt="" class="titleIcon" /><h6>Content styles</h6></div>
+                    <pre class="showCodeJS">
+//===== Masked input =====//
+$.mask.definitions['~'] = "[+-]";
+$(".maskDate").mask("99/99/9999",{ completed: function(){alert("Callback when completed");}});
+$(".maskPhone").mask("(999) 999-9999");
+$(".maskPhoneExt").mask("(999) 999-9999? x99999");
+$(".maskIntPhone").mask("+33 999 999 999");
+$(".maskTin").mask("99-9999999");
+$(".maskSsn").mask("999-99-9999");
+$(".maskProd").mask("a*-999-a999", { placeholder: " " });
+$(".maskEye").mask("~9.99 ~9.99 999");
+$(".maskPo").mask("PO: aaa-999-***");
+$(".maskPct").mask("99%");</pre>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- List styles -->
+        <div class="widgets">
+        	<div class="oneFour">
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/imagesList.png" alt="" class="titleIcon" /><h6>Arrows list</h6></div>
+                    <div class="body">
+                    	<div class="list arrowB">
+                            <strong class="red">Arrows</strong>
+                            <ul>
+                            	<li>Lorem ipsum dolor sit amet, consectetur</li>
+                            </ul>
+                        </div>
+                    	<div class="list arrowG">
+                        	<ul>
+                            	<li>Nulla facilisi. Maecenas non lorem velit.</li>
+                            </ul>
+                        </div>
+                    	<div class="list arrowlG">
+                        	<ul>
+                            	<li>Nulla facilisi. Integer rhoncus nunc consectetur</li>
+                            </ul>
+                        </div>
+                    	<div class="list arrowR">
+                        	<ul>
+                                <li>Cras eget justo orci, sodales sodales </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        	<div class="oneFour">
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/imagesList.png" alt="" class="titleIcon" /><h6>Plus list</h6></div>
+                    <div class="body">
+                    	<div class="list plusB">
+                            <strong class="red">Pluses</strong>
+                            <ul>
+                            	<li>Etiam urna velit, porttitor sed faucibus at</li>
+                            </ul>
+                        </div>
+                        
+                    	<div class="list plusG">
+                        	<ul>
+                            	<li>Nullam venenatis erat ut mi hendrerit scelerisque</li>
+                            </ul>
+                        </div>
+
+                    	<div class="list pluslG">
+                        	<ul>
+                            	<li>Curabitur est arcu, dictum et commodo hendrerit</li>
+                            </ul>
+                        </div>
+
+                    	<div class="list plusR">
+                        	<ul>
+                                <li>Maecenas suscipit augue vitae nisl iaculis fringilla</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        	<div class="oneFour">
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/imagesList.png" alt="" class="titleIcon" /><h6>Tip list</h6></div>
+                    <div class="body">
+                    	<div class="list tipB">
+                            <strong class="red">Tips</strong>
+                            <ul>
+                            	<li>Phasellus adipiscing vulputate lacus, sit amet</li>
+                            </ul>
+                        </div>
+                        
+                    	<div class="list tipG">
+                        	<ul>
+                            	<li>Suspendisse ullamcorper ornare mattis</li>
+                            </ul>
+                        </div>
+
+                    	<div class="list tiplG">
+                        	<ul>
+                            	<li>Vivamus sagittis risus vitae nisi venenatis porta</li>
+                            </ul>
+                        </div>
+
+                    	<div class="list tipR">
+                        	<ul>
+                                <li>Maecenas lacinia lectus eget lorem rutrum consequat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        	<div class="oneFour">
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/imagesList.png" alt="" class="titleIcon" /><h6>Round tip list</h6></div>
+                    <div class="body">
+                    	<div class="list roundtipB">
+                            <strong class="red">Round tips</strong>
+                            <ul>
+                            	<li>Nullam velit nibh, semper nec imperdiet eget, semper</li>
+                            </ul>
+                        </div>
+                        
+                    	<div class="list roundtipG">
+                        	<ul>
+                            	<li>Maecenas ornare mollis turpis</li>
+                            </ul>
+                        </div>
+
+                    	<div class="list roundtiplG">
+                        	<ul>
+                            	<li>Nunc risus ante, feugiat sit amet tincidunt in, libero</li>
+                            </ul>
+                        </div>
+
+                    	<div class="list roundtipR">
+                        	<ul>
+                                <li>Ut ultricies tortor eget dolor feugiat ut imperdiet arcu </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+
+    {% include "app/_footer_line.html" %}
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>

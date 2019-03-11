@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Crown - premium responsive admin template for backend systems</title>
+{% include  "app/js.html" %}
+
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body>
+
+{% include "app/_left_side.html" with showbalance=True %}
+
+<!-- Right side -->
+<div id="rightSide">
+
+    {% include "app/_top_fixed_navigation.html" %}
+    {% include "app/_responsive_header.html" %}
+    {% include "app/_title_area.html" with page_title="File Manager"%}
+
+    <div class="line"></div>
+
+    {% include "app/_page_statistics_and_control_bottons_area.html" with class_name="controlB" size=32 %}
+
+    <div class="line"></div>
+    
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+    
+        <!-- File manager -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/files.png" alt="" class="titleIcon" /><h6>File Manager</h6></div>
+            <div id="fm"></div>
+        </div>
+    
+    </div>
+
+    {% include "app/_footer_line.html" %}
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>

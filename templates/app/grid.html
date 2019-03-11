@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Crown - premium responsive admin template for backend systems</title>
+{% include  "app/js.html" %}
+
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body>
+
+<!-- Left side content -->
+<div id="leftSide">
+    {% include "app/_left_side_top.html" with showbalance=True %}
+
+    <div class="sidebarSep"></div>
+
+    <!-- Left navigation -->
+    <ul id="menu" class="nav">
+        {% include "app/_left_section_dashboard.html" %}
+        {% include "app/_left_section_statistics_and_charts.html" %}
+        {% include "app/_left_section_forms.html" %}
+        {% include "app/_left_section_ui_elements.html" %}
+        {% include "app/_left_section_tables.html" %}
+        <li class="widgets"><a href="#" title="" class="active exp" id="current"><span>Widgets and grid</span><strong>2</strong></a>
+            <ul class="sub">
+                <li><a href={% url "widgets" %} title="">Widgets</a></li>
+                <li class="last this"><a href={% url "grid" %} title="">Grid</a></li>
+            </ul>
+        </li>
+        {% include "app/_left_section_errors.html" %}
+        {% include "app/_left_section_file_manager.html" %}
+        {% include "app/_left_section_other_pages.html" %}
+    </ul>
+</div>
+
+
+<!-- Right side -->
+<div id="rightSide">
+
+    {% include "app/_top_fixed_navigation.html" %}
+    {% include "app/_responsive_header.html" %}
+    {% include "app/_title_area.html" with page_title="Content Grid"%}
+
+    <div class="line"></div>
+
+    {% include "app/_page_statistics_and_control_bottons_area.html" with class_name="controlB" size=32 %}
+
+    <div class="line"></div>
+    
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+    
+        <!-- Note -->
+        <div class="nNote nInformation hideit">
+            <p><strong>NOTE: </strong>It's a general content structure. Please see documentation for more detailed explanation.</p>
+        </div>
+        
+        <!-- Full width -->
+        <div class="widget">
+            <div class="title"><h6>Full width</h6><div class="clear"></div></div>
+            <p>Fusce luctus libero porta eros molestie sed varius nulla pharetra. Praesent elementum convallis felis, et scelerisque ipsum ullamcorper sit amet. Fusce vitae diam dui. Phasellus non nulla nisi. Suspendisse interdum massa vulputate ligula fermentum id tempor eros dictum.</p>
+        </div>
+        
+        <!-- Half width -->
+        <div class="widgets">
+            <div class="oneTwo">
+                <div class="widget">
+                    <div class="title"><h6>Half width</h6></div>
+                    <p>ed condimentum, purus pretium varius blandit, diam felis tempor tortor, a pulvinar felis lectus eget eros. Aenean in turpis risus, condimentum pellentesque eros. Mauris elementum est vitae neque venenatis accumsan.</p>
+                </div>
+            </div>
+            <div class="oneTwo">
+                <div class="widget">
+                    <div class="title"><h6>Half width</h6></div>
+                    <p>ed condimentum, purus pretium varius blandit, diam felis tempor tortor, a pulvinar felis lectus eget eros. Aenean in turpis risus, condimentum pellentesque eros. Mauris elementum est vitae neque venenatis accumsan.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Third width -->
+        <div class="widgets">
+        	<div class="oneThree">
+            	<div class="widget">
+                	<div class="title"><h6>One third width</h6></div>
+                    <p>Nam lorem elit, luctus quis consectetur sollicitudin, tempor nec elit. Nunc nibh lorem, pharetra at porta vitae, volutpat quis lorem. Nam dolor nisl, condimentum eget</p>
+                </div>
+
+            </div>
+            
+        	<div class="oneThree">
+            	<div class="widget">
+                	<div class="title"><h6>One third width</h6></div>
+                    <p>Nam lorem elit, luctus quis consectetur sollicitudin, tempor nec elit. Nunc nibh lorem, pharetra at porta vitae, volutpat quis lorem. Nam dolor nisl, condimentum eget</p>
+                </div>
+            </div>
+            
+        	<div class="oneThree">
+            	<div class="widget">
+                	<div class="title"><h6>One third width</h6></div>
+                    <p>Nam lorem elit, luctus quis consectetur sollicitudin, tempor nec elit. Nunc nibh lorem, pharetra at porta vitae, volutpat quis lorem. Nam dolor nisl, condimentum eget</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Third / Half -->
+        <div class="widgets">
+        	<div class="twoOne">
+            	<div class="widget">
+                	<div class="title"><h6>Two third width</h6></div>
+                    <p>Proin imperdiet magna eu ligula ultrices bibendum. Vivamus cursus placerat placerat. Aenean euismod ligula non libero imperdiet semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ut eros nec eros interdum accumsan a id orci.</p>
+                </div>
+            </div>
+            
+        	<div class="oneThree">
+            	<div class="widget">
+                	<div class="title"><h6>One third width</h6></div>
+                    <p>Nam lorem elit, luctus quis consectetur sollicitudin, tempor nec elit. Nunc nibh lorem, pharetra at porta vitae, volutpat quis lorem. Nam dolor nisl, condimentum eget</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Half / Third -->
+        <div class="widgets">
+        	<div class="oneThree">
+            	<div class="widget">
+                	<div class="title"><h6>One third width</h6></div>
+                    <p>Nam lorem elit, luctus quis consectetur sollicitudin, tempor nec elit. Nunc nibh lorem, pharetra at porta vitae, volutpat quis lorem. Nam dolor nisl, condimentum eget</p>
+                </div>
+            </div>
+            
+        	<div class="twoOne">
+            	<div class="widget">
+                	<div class="title"><h6>Two third width</h6></div>
+                    <p>Proin imperdiet magna eu ligula ultrices bibendum. Vivamus cursus placerat placerat. Aenean euismod ligula non libero imperdiet semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ut eros nec eros interdum accumsan a id orci.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Quarter -->
+        <div class="widgets">
+        	<div class="oneFour">
+            	<div class="widget">
+                	<div class="title"><h6>Quarter width</h6></div>
+                    <p>Ut sed ligula a orci eleifend semper et vel urna. Sed semper tortor urna. Proin faucibus nunc nibh, et porta metus</p>
+                </div>
+            </div>
+            
+        	<div class="oneFour">
+            	<div class="widget">
+                	<div class="title"><h6>Quarter width</h6></div>
+                    <p>Ut sed ligula a orci eleifend semper et vel urna. Sed semper tortor urna. Proin faucibus nunc nibh, et porta metus</p>
+                </div>
+            </div>
+            
+        	<div class="oneFour">
+            	<div class="widget">
+                	<div class="title"><h6>Quarter width</h6></div>
+                    <p>Ut sed ligula a orci eleifend semper et vel urna. Sed semper tortor urna. Proin faucibus nunc nibh, et porta metus</p>
+                </div>
+            </div>
+            
+        	<div class="oneFour">
+            	<div class="widget">
+                	<div class="title"><h6>Quarter width</h6></div>
+                    <p>Ut sed ligula a orci eleifend semper et vel urna. Sed semper tortor urna. Proin faucibus nunc nibh, et porta metus</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    {% include "app/_footer_line.html" %}
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>

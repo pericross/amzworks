@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Crown - premium responsive admin template for backend systems</title>
+{% include  "app/js.html" %}
+
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body>
+
+<!-- Left side content -->
+<div id="leftSide">
+    {% include "app/_left_side_top.html" with showbalance=True %}
+
+    <div class="sidebarSep"></div>
+    
+    <!-- Left navigation -->
+    <ul id="menu" class="nav">
+        {% include "app/_left_section_dashboard.html" %}
+        {% include "app/_left_section_statistics_and_charts.html" %}
+        {% include "app/_left_section_forms.html" %}
+        {% include "app/_left_section_ui_elements.html" %}
+        <li class="tables"><a href="tables.html" title="" class="active exp" id="current"><span>Tables</span><strong>3</strong></a>
+            <ul class="sub">
+                <li><a href={% url "table_static" %} title="">Static tables</a></li>
+                <li><a href={% url "table_dynamic" %} title="">Dynamic table</a></li>
+                <li class="this last"><a href={% url "table_sortable_resizable" %} title="">Sortable &amp; resizable tables</a></li>
+            </ul>
+        </li>
+        {% include "app/_left_section_widgets.html" %}
+        {% include "app/_left_section_errors.html" %}
+        {% include "app/_left_section_file_manager.html" %}
+        {% include "app/_left_section_other_pages.html" %}
+    </ul>
+</div>
+
+
+<!-- Right side -->
+<div id="rightSide">
+
+
+    {% include "app/_top_fixed_navigation.html" %}
+    {% include "app/_responsive_header.html" %}
+    {% include "app/_title_area.html" with page_title="Sortable and Resizable Tables"%}
+
+    <div class="line"></div>
+
+    {% include "app/_page_statistics_and_control_bottons_area.html" with class_name="controlB" size=32 %}
+
+    <div class="line"></div>
+    
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+    
+        <!-- Note -->
+        <div class="nNote nInformation hideit">
+            <p><strong>INFORMATION: </strong>Here are both versions of tables - with sortable and resizable columns.</p>
+        </div>
+
+    	<!-- Table with sortable columns -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/frames.png" alt="" class="titleIcon" /><h6>Table with sortable columns</h6></div>
+            <table cellpadding="0" cellspacing="0" width="100%" class="sTable">
+                <thead>
+                    <tr>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 1</td>
+                        <td>Row 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4</td>
+                        <td>Row 2</td>
+                        <td>Row 5</td>
+                        <td>Row 3</td>
+                        <td>Row 5</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td>Row 1</td>
+                        <td>Row 3</td>
+                        <td>Row 2</td>
+                        <td>Row 4</td>
+                    </tr>
+                    <tr>
+                        <td>Row 5</td>
+                        <td>Row 5</td>
+                        <td>Row 2</td>
+                        <td>Row 4</td>
+                        <td>Row 1</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 1</td>
+                        <td>Row 5</td>
+                        <td>Row 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Table with resizable columns -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/frames.png" alt="" class="titleIcon" />
+            <h6>Table with resizable columns</h6></div>
+            <table cellpadding="0" cellspacing="0" width="100%" class="sTable" id="res">
+                <thead>
+                    <tr>
+                        <td width="20%">Column name</td>
+                        <td width="20%">Column name</td>
+                        <td width="20%">Column name</td>
+                        <td width="20%">Column name</td>
+                        <td width="20%">Column name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 5</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 5</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 5</td>
+                    </tr>
+                    <tr>
+                        <td>Row 5</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 5</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/frames.png" alt="" class="titleIcon" />
+            <h6>Both: resizable and sortable</h6></div>
+            <table cellpadding="0" cellspacing="0" width="100%" class="sTable" id="res1">
+                <thead>
+                    <tr>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                        <td class="sortCol"><div>Column name<span></span></div></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1</td>
+                        <td>Row 1</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 5</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4</td>
+                        <td>Row 2</td>
+                        <td>Row 2</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td>Row 5</td>
+                        <td>Row 5</td>
+                        <td>Row 5</td>
+                        <td>Row 1</td>
+                    </tr>
+                    <tr>
+                        <td>Row 5</td>
+                        <td>Row 3</td>
+                        <td>Row 1</td>
+                        <td>Row 1</td>
+                        <td>Row 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 4</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    {% include "app/_footer_line.html" %}
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>

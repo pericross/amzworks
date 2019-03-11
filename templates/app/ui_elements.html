@@ -1,0 +1,697 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Crown - premium responsive admin template for backend systems</title>
+    {% include "app/js.html" %}
+
+    <!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body>
+
+{% include "app/_left_side.html" %}
+
+<!-- Right side -->
+<div id="rightSide">
+
+    {% include "app/_top_fixed_navigation.html" %}
+    {% include "app/_responsive_header.html" %}
+    {% include "app/_title_area.html" with page_title="Interface elements" %}
+
+    <div class="line"></div>
+
+    <!-- Page statistics area -->
+    <div class="statsRow">
+        <div class="wrapper statsItems">
+
+            <!-- Stats item -->
+            <div class="sItem ticketsStats">
+                <h2><a title="" class="value">1258<span>visits</span></a></h2>
+
+                <div class="statsDetailed" id="s1">
+                    <div class="statsContent">
+                        <div class="sElements">
+                            <div class="sDisplay"><h4>5422</h4><span>new visits</span></div>
+                            <div class="sDisplay"><h4>19k+</h4><span>total</span></div>
+                            <div class="sDisplay"><h4>8520</h4><span>returned</span></div>
+                        </div>
+                        <span class="line"></span>
+                        <div class="statsUpdate">
+                            <span>Next update in:</span>
+                            <span>19 hrs 49 min</span>
+                            <div class="contentProgress">
+                                <div class="barG tipS" id="bar1" original-title="19%" style="width: 19%;"></div>
+                            </div>
+                        </div>
+                        <div class="statsDropBtn"><a href="#" class="button basic"><img
+                                src="/static/images/icons/dark/refresh4.png" class="icon" alt=""><span>Update now</span></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="changes">
+                    <span class="negBar" values="5,10,15,20,18,16,14,20,15,16"><canvas width="49" height="16"
+                                                                                       style="display: inline-block; width: 49px; height: 16px; vertical-align: top;"></canvas></span>
+                    <span class="negative">-0.6%</span>
+                </span>
+            </div>
+
+            <!-- Stats item -->
+            <div class="sItem visitsStats">
+                <h2><a title="" class="value">1258<span>tickets</span></a></h2>
+                <div class="statsDetailed" id="s2">
+                    <div class="statsContent">
+                        <div class="sElements">
+                            <div class="sDisplay"><h4>842</h4><span>pending</span></div>
+                            <div class="sDisplay"><h4>24k+</h4><span>closed</span></div>
+                            <div class="sDisplay"><h4>1245</h4><span>total</span></div>
+                        </div>
+                        <span class="line"></span>
+                        <div class="statsUpdate">
+                            <span>Next update in:</span>
+                            <span>10 hrs 55 min</span>
+                            <div class="contentProgress">
+                                <div class="barG tipS" id="bar2" title="68%"></div>
+                            </div>
+                        </div>
+                        <div class="statsDropBtn"><a href="#" class="button basic"><img
+                                src="/static/images/icons/dark/bubbles2.png" class="icon"
+                                alt=""/><span>Support center</span></a></div>
+                    </div>
+                </div>
+                <span class="changes">
+                    <span class="posBar" values="5,10,15,20,25,30,35,40,45,50"></span>
+                    <span class="positive">+0.6%</span>
+                </span>
+            </div>
+
+            <!-- Stats item -->
+            <div class="sItem usersStats">
+                <h2><a title="" class="value">1258<span>users</span></a></h2>
+                <div class="statsDetailed" id="s3">
+                    <div class="statsContent">
+                        <div class="sElements">
+                            <div class="sDisplay"><h4>1124</h4><span>new users</span></div>
+                            <div class="sDisplay"><h4>9842</h4><span>pending</span></div>
+                            <div class="sDisplay"><h4>5483</h4><span>total</span></div>
+                        </div>
+                        <span class="line"></span>
+                        <div class="statsUpdate">
+                            <span>Next update in:</span>
+                            <span>14 hrs 21 min</span>
+                            <div class="contentProgress">
+                                <div class="barG tipS" id="bar3" title="32%"></div>
+                            </div>
+                        </div>
+                        <div class="statsDropBtn"><a href="#" class="button basic"><img
+                                src="/static/images/icons/dark/users.png" class="icon" alt=""/><span>Add more users</span></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="changes">
+                    <span class="zeroBar" values="5,10,15,20,25,30,35,40,45,50"></span>
+                    <span class="zero">0.0%</span>
+                </span>
+            </div>
+
+            <!-- Stats item -->
+            <div class="sItem ordersStats">
+                <h2><a title="" class="value">1258<span>orders</span></a></h2>
+                <div class="statsDetailed" id="s4">
+                    <div class="statsContent">
+                        <div class="sElements">
+                            <div class="sDisplay"><h4>578</h4><span>new orders</span></div>
+                            <div class="sDisplay"><h4>5486</h4><span>pending</span></div>
+                            <div class="sDisplay"><h4>16k+</h4><span>total</span></div>
+                        </div>
+                        <span class="line"></span>
+                        <div class="statsUpdate">
+                            <span>Next update in:</span>
+                            <span>1 hr 19 min</span>
+                            <div class="contentProgress">
+                                <div class="barG tipS" id="bar4" title="89%"></div>
+                            </div>
+                        </div>
+                        <div class="statsDropBtn"><a href="#" class="button basic"><img
+                                src="/static/images/icons/dark/stats.png" class="icon" alt=""/><span>View statistics</span></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="changes">
+                    <span class="negBar" values="5,10,15,20,25,30,35,40,45,50"></span>
+                    <span class="negative">+0.6%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+
+    <div class="line mt30"></div>
+
+
+    {% include "app/_page_statistics_and_control_bottons_area.html" with class_name="controlB" size="32" %}
+
+    <div class="line"></div>
+
+    <div class="line mt30"></div>
+
+    {% include "app/_page_statistics_and_control_bottons_area.html" with class_name="horControlB" size="16" %}
+
+
+    <div class="line"></div>
+
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+
+        <!-- Notifications -->
+        <div class="nNote nWarning hideit">
+            <p><strong>WARNING: </strong>This is a warning message. You can use this to warn users on any events</p>
+        </div>
+        <div class="nNote nInformation hideit">
+            <p><strong>INFORMATION: </strong>This is a message for information, can be any general information.</p>
+        </div>
+        <div class="nNote nSuccess hideit">
+            <p><strong>SUCCESS: </strong>Success message! hoooraaay!!!!</p>
+        </div>
+        <div class="nNote nFailure hideit">
+            <p><strong>FAILURE: </strong>Oops sorry. That action is not valid, or our servers have gone bonkers</p>
+        </div>
+
+        <!-- Progress bars -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/loading.png" alt="" class="titleIcon"/><h6>Progress
+                bars</h6></div>
+            <div class="formRow">
+                <label>jQuery UI bar:</label>
+                <div class="formRight">
+                    <div id="progress" class="ui-progressbar ui-widget ui-widget-content ui-corner-all"
+                         role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                        <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>Animated bar:</label>
+                <div class="formRight">
+                    <div id="progress1"><span class="pbar ui-progressbar ui-widget ui-widget-content ui-corner-all"
+                                              role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                                              aria-valuenow="0"><div
+                            class="ui-progressbar-value ui-widget-header ui-corner-left"
+                            style="display: none; width: 100%;"></div></span><span
+                            class="percent"><b>100%</b></span><span class="elapsed">Finished</span></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>Progress with delay:</label>
+                <div class="formRight">
+                    <div id="progress2"><span class="pbar ui-progressbar ui-widget ui-widget-content ui-corner-all"
+                                              role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                                              aria-valuenow="0"><div
+                            class="ui-progressbar-value ui-widget-header ui-corner-left"
+                            style="display: none; width: 100.02%;"></div></span><span class="percent"><b>100%</b></span><span
+                            class="elapsed">Finished</span></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <!-- Animated colorful progress bars -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/loading.png" alt="" class="titleIcon"/><h6>Bars with
+                tooltips</h6></div>
+            <div class="formRow">
+                <label>Green:</label>
+                <div class="formRight">
+                    <div class="contentProgress mt8">
+                        <div class="barG tipS" id="bar6" original-title="20%" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>Orange:</label>
+                <div class="formRight">
+                    <div class="contentProgress mt8">
+                        <div class="barO tipS" id="bar7" original-title="40%" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>Blue:</label>
+                <div class="formRight">
+                    <div class="contentProgress mt8">
+                        <div class="barB tipS" id="bar8" original-title="60%" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>With progress ruler:</label>
+                <div class="formRight">
+                    <div class="contentProgress">
+                        <div class="barG tipS" id="bar9" original-title="50%" style="width: 50%;"></div>
+                    </div>
+                    <ul class="ruler">
+                        <li>0</li>
+                        <li class="textC">50%</li>
+                        <li class="textR">100%</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+        <!-- UI sliders -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/settings.png" alt="" class="titleIcon"/><h6>UI
+                sliders</h6>
+            </div>
+            <div class="formRow">
+                <label>Simple slider:</label>
+                <div class="formRight">
+                    <div class="uiSliderInc ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><a
+                            class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 20%;"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>Range slider:</label>
+                <div class="formRight">
+                    <div class="sliderSpecs">
+                        <label for="rangeAmount">Price range:</label><input type="text" id="rangeAmount">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="uiRangeSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                        <div class="ui-slider-range ui-widget-header" style="left: 15%; width: 45%;"></div>
+                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 15%;"></a><a
+                            class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 60%;"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>With minimum:</label>
+                <div class="formRight">
+                    <div class="sliderSpecs">
+                        <label for="minRangeAmount">Minimum:</label><input type="text" id="minRangeAmount">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="uiMinRange ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                        <div class="ui-slider-range ui-widget-header ui-slider-range-min"
+                             style="width: 5.15021%;"></div>
+                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 5.15021%;"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="formRow">
+                <label>With maximum:</label>
+                <div class="formRight">
+                    <div class="sliderSpecs">
+                        <label for="maxRangeAmount">Maximum:</label><input type="text" id="maxRangeAmount">
+                        <div class="fix"></div>
+                    </div>
+                    <div class="uiMaxRange ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                        <div class="ui-slider-range ui-widget-header ui-slider-range-max"
+                             style="width: 80.8081%;"></div>
+                        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 19.1919%;"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- Title with numbers data -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/settings.png" alt="" class="titleIcon"/><h6>Nums
+                data</h6>
+                <div class="num"><a href="#" class="blueNum">+245</a></div>
+                <div class="num"><a href="#" class="redNum">+452</a></div>
+                <div class="num"><a href="#" class="greenNum">+877</a></div>
+                <div class="num"><a href="#" class="greyishNum">+102</a></div>
+                <div class="num"><a href="#" class="greyNum">+387</a></div>
+            </div>
+            <div class="body">Different colors for the number data in the title area</div>
+        </div>
+
+        <!-- Fullscreen tabs -->
+        <div class="widget">
+            <ul class="tabs">
+                <li class="activeTab"><a href="#tab1">Tab active</a></li>
+                <li class=""><a href="#tab2">Tab inactive</a></li>
+            </ul>
+
+            <div class="tab_container">
+                <div id="tab1" class="tab_content" style="display: block;">These are fullscreen tabs. For more widgets please visit <a href="widgets.html" title="">this page</a></div>
+                <div id="tab2" class="tab_content" style="display: none;"> This tab is active now</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="bc">
+            <ul id="breadcrumbs" class="breadcrumbs">
+                <li>
+                    <a href="#">Dashboard</a>
+                    <ul>
+                        <li><a href="forms.html">Form elements</a></li>
+                        <li><a href="ui_elements.html">Interface elements</a></li>
+                        <li><a href="widgets.html">Widgets</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Content stuff</a>
+                    <ul>
+                        <li><a href="charts.html">Charts</a></li>
+                        <li><a href="grid.html">Content grid</a></li>
+                        <li><a href="form_wizards.html">Wizards</a></li>
+                        <li><a href="form_validation.html">Form validation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tables</a>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="table_static.html">Static tables</a></li>
+                        <li><a href="table_dynamic.html">Dynamic tables</a></li>
+                    </ul>
+                </li>
+                <li class="current"><a href="#">Current page</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <!-- Larger buttons -->
+        <div class="widget">
+            <div class="title"><img src="/static/images/icons/dark/preview.png" alt="" class="titleIcon"/><h6>Large buttons</h6>
+            </div>
+            <div class="body textC">
+                <a href="#" title="" class="wButton orangewB m10"><span>Orange button</span></a>
+                <a href="#" title="" class="wButton redwB ml15 m10"><span>Red button</span></a>
+                <a href="#" title="" class="wButton bluewB ml15 m10"><span>Blue button</span></a>
+                <a href="#" title="" class="wButton greenwB ml15 m10"><span>Green button</span></a>
+                <a href="#" title="" class="wButton purplewB ml15 m10"><span>Purple button</span></a>
+            </div>
+        </div>
+
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <ul class="pages">
+                <li class="prev"><a href="#">&lt;</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li>...</li>
+                <li><a href="#">30</a></li>
+                <li class="next"><a href="#">&gt;</a></li>
+            </ul>
+        </div>
+
+        <div class="widgets">
+            <div class="oneTwo">
+                <!-- Tooltip -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/repeat.png" alt="" class="titleIcon"/><h6>Tooltip
+                        directions</h6></div>
+                    <div class="body textC">
+                        <a href="#" title="West" class="button basic tipE"
+                           style="margin: 5px;"><span>Left side</span></a>
+                        <a href="#" title="North" class="button basic tipS"
+                           style="margin: 5px;"><span>Top side</span></a>
+                        <a href="#" title="South" class="button basic tipN"
+                           style="margin: 5px;"><span>Bottom side</span></a>
+                        <a href="#" title="East" class="button basic tipW" style="margin: 5px;"><span>Right side</span></a>
+                    </div>
+                </div>
+
+                <!--Small buttons -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/preview.png" alt="" class="titleIcon"/><h6>Small
+                        buttons</h6></div>
+                    <div class="body textC">
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/user.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/bubbles2.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/cart.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/stats.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/check.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/close.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/dialog.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/full2.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/pencil.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/heart.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/inbox2.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/laptop.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/like.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/magnify.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/photos.png" alt=""/></a>
+                    </div>
+                </div>
+
+                <!--Color icons -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/preview.png" alt="" class="titleIcon"/><h6>Icons</h6>
+                    </div>
+                    <div class="body textC">
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/block.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/blue-document-pdf-text.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/calendar-task.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/hammer.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/flask.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/edit-column.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/hand-point-090.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/plus.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/pencil.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/paper-clip.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/star.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/tick.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/sitemap.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/user-silhouette-question.png" alt=""/></a>
+                        <a href="#" title="" class="smallButton" style="margin: 5px;"><img
+                                src="/static/images/icons/color/toolbox.png" alt=""/></a>
+                    </div>
+                </div>
+
+                <!-- Ajax loaders -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/dialog.png" alt="" class="titleIcon"/><h6>
+                        Dialogs</h6></div>
+                    <div class="body textC">
+                        <div class="uDialog">
+                            <div id="dialog-message" title="Dialog title">
+                                <p><img src="/static/images/icons/color/tick.png" alt="" class="icon" />Your files have downloaded successfully into the My Downloads folder.</p>
+                                <p>Currently using <strong>36% of your storage space</strong></p>
+
+                                <div class="uiForm">
+                                    <form action="" class="dialog">
+                                        <input type="text" value="http://" name="inputtext"/>
+                                        <div class="floatL mr10"><input type="radio" name="question1" id="one" checked="checked" /><label for="one">Selected radio</label></div>
+                                        <div class="floatR"><input type="radio" name="question1" id="two" /><label for="two">Normal state</label></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample page content to illustrate the layering of the dialog -->
+                        <a href="#" title="" class="button greyishB" id="opener" style="margin: 5px;">
+                            <span>Dialog with form elements</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="oneTwo">
+
+                <!-- Growl notifications -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/dialog.png" alt="" class="titleIcon"/><h6>Growl
+                        notifications</h6></div>
+                    <div class="body textC">
+                        <input type="button" value="Basic notice" class="basic" style="margin: 5px;"
+                               onclick="$.jGrowl('Hello world!');"/>
+                        <input type="button" value="Sticky notice" class="basic" style="margin: 5px;"
+                               onclick="$.jGrowl('Stick this!', { sticky: true });"/>
+                        <input type="button" value="Message with header" class="basic" style="margin: 5px;"
+                               onclick="$.jGrowl('A message with a header', { header: 'Important' });"/>
+                        <input type="button" value="Long live message" class="basic" style="margin: 5px;"
+                               onclick="$.jGrowl('A message that will live a little longer.', { life: 10000 });"/>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/preview.png" alt="" class="titleIcon"/><h6>Buttons
+                        samples</h6></div>
+                    <div class="body textC">
+                        <a href="#" title="" class="button basic" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button redB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button blueB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button greenB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button greyishB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button brownB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button dredB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button violetB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button dblueB" style="margin: 5px;"><span>Button</span></a>
+                        <a href="#" title="" class="button blackB" style="margin: 5px;"><span>Button</span></a>
+                    </div>
+                </div>
+
+                <!-- Ajax loaders -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/loading.png" alt="" class="titleIcon"/><h6>Ajax
+                        loaders</h6></div>
+                    <div class="body textC">
+                        <img src="/static/images/loaders/loader.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader1.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader2.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader3.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader4.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader5.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader6.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader7.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader8.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader9.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader10.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader11.gif" alt="" style="margin: 5px;"/>
+                        <img src="/static/images/loaders/loader12.gif" alt="" style="margin: 5px;"/>
+                    </div>
+                </div>
+
+                <!-- Buttons with icons -->
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/preview.png" alt="" class="titleIcon"/><h6>Buttons
+                        with icons</h6></div>
+                    <div class="body textC">
+                        <a href="#" title="" class="button basic" style="margin: 5px;"><img
+                                src="/static/images/icons/dark/stats.png" alt="" class="icon"/><span>Button</span></a>
+                        <a href="#" title="" class="button redB" style="margin: 5px;"><img
+                                src="/static/images/icons/light/transfer.png" alt="" class="icon"/><span>Button</span></a>
+                        <a href="#" title="" class="button blueB" style="margin: 5px;"><img
+                                src="/static/images/icons/light/users2.png" alt="" class="icon"/><span>Button</span></a>
+                        <a href="#" title="" class="button greenB" style="margin: 5px;"><img
+                                src="/static/images/icons/light/dialog.png" alt="" class="icon"/><span>Button</span></a>
+                        <a href="#" title="" class="button greyishB" style="margin: 5px;"><img
+                                src="/static/images/icons/light/create.png" alt="" class="icon"/><span>Button</span></a>
+                        <a href="#" title="" class="button brownB" style="margin: 5px;"><img
+                                src="/static/images/icons/light/pencil.png" alt="" class="icon"/><span>Button</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!-- Pickers -->
+        <form action="" class="form">
+            <div class="widget">
+                <div class="title"><img src="/static/images/icons/dark/dropper.png" alt="" class="titleIcon"/><h6>Pickers</h6>
+                </div>
+                <div class="formRow">
+                    <label>Time picker:</label>
+                    <div class="formRight">
+                        <input type="text" class="timepicker" size="10"/><span
+                            class="f11">Use mousewheel and keyboard</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="formRow">
+                    <label>Date picker:</label>
+                    <div class="formRight">
+                        <input type="text" class="datepicker"/>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="formRow">
+                    <label>Inline calendar:</label>
+                    <div class="formRight">
+                        <div class="datepickerInline"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="formRow">
+                    <label>Color Picker:</label>
+                    <div class="formRight">
+                        <div class="cPicker" id="cPicker">
+                            <div style="background-color: #e62e90"></div>
+                            <span>Choose color...</span></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="formRow">
+                    <label>Inline color Picker:</label>
+                    <div class="formRight">
+                        <div class="cPicker" id="flatPicker"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    {% include "app/_footer_line.html" %}
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- Left side content -->
+<div id="leftSide">
+    {% include "app/_left_side_top.html" with showblance="{{ showbalance }}" %}
+
+    <div class="sidebarSep"></div>
+
+    <!-- Left navigation -->
+    {% include "app/_left_navigation.html" %}
+
+
+ {% if haslowerleft %}
+     {% include "app/_left_side_bottom_section.html" %}
+{% endif %}
+
+
+</div>
